@@ -6,12 +6,34 @@ Exercícios JS
 Nível 1 — Iniciante
 Exercício 1: Peça ao usuário um número com prompt. Use if/else para exibir se o número é positivo, negativo ou zero.
 
+Resolução: <! -- let valor = Number(prompt('Digite um número: '))
+
+if (valor < 0){
+    console.log (`${valor} é um número negativo.`)
+} else if (valor > 0) { 
+    console.log (`${valor} é um número positivo.`)
+} else{
+    console.log (`Zero.`)
+} -->
+
 Exercício 2: Peça a temperatura em graus Celsius. Use if/else if para classificar:
 
 Abaixo de 15°C → "Frio"
 Entre 15°C e 25°C → "Agradável"
 Acima de 25°C → "Quente"
-Nível 2 — Intermediário
+
+Resolução: <! -- let temp = Number(prompt('Informe a temperatura: '))
+
+if (temp <= 15) {
+    console.log('Frio')
+} else if (temp <= 25) {
+    console.log ('Agradável')
+} else {
+    console.log ('Quente')
+} -->
+
+✏️ Nível 2 — Intermediário
+
 Exercício 3: Crie uma função calcularDesconto(preco, tipocliente) que use switch para aplicar descontos:
 
 "vip" → 30% de desconto

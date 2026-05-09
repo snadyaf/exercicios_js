@@ -42,7 +42,37 @@ Exercício 3: Crie uma função calcularDesconto(preco, tipocliente) que use swi
 Qualquer outro → sem desconto
 Exiba o preço final com console.log.
 
+Resolução: <! -- function calcularDesconto (preco, tipocliente){
+    let desconto = 0;
+    switch (tipocliente) {
+        case "vip":
+            desconto = 30;
+            break;
+        case "comum":
+            desconto = 10;
+            break;
+        case "novo":
+            desconto = 15;
+            break;
+        default:
+            preco;
+  }
+    let precoFinal = preco - desconto;
+    return precoFinal
+} 
+
+console.log(calcularDesconto(100,)) -->
+
 Exercício 4: Reescreva o exercício 1 usando operador ternário no lugar do if/else.
+
+Resolução: <! --
+   let valor = Number(prompt("Digite um número: "))
+
+valor > 0 ? console.log("Esse número é positivo") :
+valor < 0 ? console.log("Esse número é negativo") :
+console.log("Esse número é zero")
+
+-->
 
 Nível 3 — Avançado
 Exercício 5: Crie uma função calcularFrete(distancia, tipoProduto) que determine o valor do frete com base em duas condições combinadas:
@@ -57,6 +87,25 @@ Se distancia > 200:
 Produto "fragil" → R$ 120,00
 Outros → R$ 70,00
 Teste a função com ao menos 3 combinações diferentes.
+
+Resolução : 
+>! -- function calcularFrete (distancia, tipoProduto) {
+    let valorFrete = 0;
+    
+    distancia <= 50 && tipoProduto === "fragil" ? valorFrete = 25 :
+    distancia <= 50 && tipoProduto === "outros" ? valorFrete = 10 :
+    distancia <= 200 && tipoProduto === "fragil" ? valorFrete = 60 :
+    distancia <= 200 && tipoProduto === "outros" ? valorFrete = 30 :
+    distancia > 200 && tipoProduto === "fragil" ? valorFrete = 120 :
+    distancia > 200 && tipoProduto === "outros" ? valorFrete = 70 :
+    "Digite distância e tipo de produto válido."
+    
+    return valorFrete
+}
+
+console.log(calcularFrete(100, "fragil"))
+console.log(calcularFrete(40, "outros"))
+console.log(calcularFrete(250, "fragil")) -->
 
 
 ✏️ Exercícios

@@ -114,6 +114,12 @@ Exercício 1: Crie uma função saudacao(nome) que receba um nome e exiba "Olá,
 
 Exercício 2: Crie uma função calcularPerimetro(lado) que receba o lado de um quadrado e retorne seu perímetro (lado * 4). Exiba o resultado com console.log.
 
+Resolução: <! -- function calcularPerimetro (lado){
+    let perimetro = lado * 4
+    return perimetro
+}
+console.log(calcularPerimetro(4)) -->
+
 Exercício 3: Reescreva a função do exercício 2 como arrow function.
 
 Nível 2 — Intermediário
